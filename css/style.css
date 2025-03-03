@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --titulos:  #E67E22;
+    --textos:   #d5f5e3;
+    --h1_titulo: font-size: 4rem;
+    /* Textos */
+    
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Configuraciones Header y footer */
+
+h1 {
+    font-weight: 900;
+    font-size: 4rem;
+    color: var(--titulos);
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 3rem;
+    color:  var(--titulos) ;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.hero_informacion p{
+    font-size: 2rem;
+    color:  var(--textos);
+}
+
+a {
+    text-decoration: none;
+    margin: 0 1rem;
+    color: var(--textos);
+    font-size: 1.5rem;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-weight: bolder;
+}
+
+a:hover {
+    border-bottom: 2px solid var(--textos);
+    color: #229954;
+    transform: scale(1.1); 
+}
+
+
+button {
+    height: 4rem;
+    width: 10rem;
+    border-radius: 15px;
+    background: linear-gradient(
+        0deg,
+        hsl(168deg 76% 37%) 0%,
+        hsl(165deg 78% 39%) 18%,
+        hsl(162deg 80% 41%) 26%,
+        hsl(159deg 82% 43%) 33%,
+        hsl(156deg 83% 45%) 39%,
+        hsl(153deg 86% 47%) 44%,
+        hsl(150deg 88% 49%) 50%,
+        hsl(147deg 90% 51%) 56%,
+        hsl(144deg 92% 53%) 61%,
+        hsl(141deg 94% 55%) 67%,
+        hsl(138deg 95% 56%) 74%,
+        hsl(135deg 98% 58%) 82%,
+        hsl(132deg 100% 60%) 100%
+    );
+    border: none;
+    color: #d5f5e3;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1); /* Agranda el botón un 10% */
+    color: #229954;
+}
+
+
+img {
+    height: 5rem;
+    width: 5rem;
+}
+
+/* Hero - hEADER */
+
+header {
+    margin-bottom: 1rem;
+}
+
+.hero {
+    background-image: 
+        linear-gradient(
+            180deg,
+            rgba(0, 255, 127, 0.5) 0%,  
+            rgba(0, 230, 120, 0.5) 4%,
+            rgba(0, 210, 110, 0.5) 8%,
+            rgba(0, 190, 100, 0.5) 13%,
+            rgba(0, 170, 90, 0.5) 17%,
+            rgba(0, 150, 80, 0.5) 21%,
+            rgba(0, 130, 70, 0.5) 25%,
+            rgba(0, 110, 60, 0.5) 29%,
+            rgba(0, 90, 50, 0.5) 33%,
+            rgba(0, 70, 40, 0.5) 37%,
+            rgba(0, 50, 30, 0.5) 42%,
+            rgba(3, 93, 63, 0.5) 46%,
+            rgba(1, 75, 38, 0.538) 50%
+        ),
+        url(../img/hero.jpg); /* La imagen queda detrás del gradiente */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40rem;
+    position: relative;
+    padding: 0.1px;
+    background-attachment: fixed;
+    
+}
+
+.hero_efecto {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+
+}
+
+/* Estilos Iniciales */
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 15px;
+    background: transparent;
+    transition: all 0.5s ease-in-out; /* Transición 
+    general */
+
+}
+
+/* Navbar fijo con animación */
+.nav-fixed {
+    position: fixed;
+    top: -80px; /* Lo ocultamos inicialmente */
+    left: 0;
+    width: 100%;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background-image: linear-gradient(to bottom, #25d37d, #0ad66b, #00d956, #00dc3b, #0cde00);
+}
+
+/* Cuando aparece al hacer scroll */
+.nav-show {
+    top: 0;
+    transition: top 0.4s ease-out; /* Desliza suavemente hacia abajo */
+}
+
+/* Cuando desaparece al volver arriba */
+.nav-hide {
+    top: -80px;
+    transition: top 0.4s ease-in; /* Desliza suavemente hacia arriba */
+}
+
+
+.nav_logo {
+    padding: 0.1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+.nav_logo h2 {
+    font-size: 2rem;
+}
+
+.nav_logo img {
+    margin: 0 1rem;
+}
+
+.nav_link {
+    display: flex;
+    height: 0;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+
+
+
+
+.hero_informacion {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero_informacion h1, .hero_informacion p, .hero_informacion button {
+    margin: 1rem 0;
+}
+
+.nav_buscador {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav_buscador input{
+    background-color: #fff;
+    border: none;
+    border: 1px solid black;
+    border-radius: 0.7rem;
+    width: 8rem;
+    height: 2rem;
+    background-image: url(../img/buscar.png);
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    background-position: center;
+    background-position: left;
+}
+
+.nav_buscador input:focus{ 
+    background-image: none;
+    
+}
+
+input:hover {
+    transform: scale(1.05); 
+}
+
+.nav_buscador a {
+    border-radius: 10rem;
+    background-color: #4ecf2e;
+    color: var(--textos);
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: none;
+
+}
+
+
+/* Main */
+
+main{
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "foto foto foro"
+    "foto foto foro"
+    "info1 info2 info3";
+    gap: 2rem;
+
+}
+
+/* Main areas */
+.grid_fotoPrueba{
+    grid-area: foto;
+    box-shadow: 0px 0px 5px 0px rgba(66, 68, 90, 1);
+    border-radius: 10px;
+}
+
+
+.grid_fotoPrueba img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px 10px 0 0;
+}
+
+.grid_foro {
+    grid-area: foro;
+    box-shadow: 0px 0px 5px 0px rgba(66, 68, 90, 1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+
+
+ .grid_foro .foro_info{
+    margin: 1.5rem 0;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+ }
+
+
+
+.grid_info1 {
+    grid-area: info1;
+    box-shadow: 0px 0px 5px 0px rgba(66, 68, 90, 1);
+    border-radius: 10px;
+}
+
+.grid_info1 img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+}
+
+.grid_info2 {
+    grid-area: info2;
+    box-shadow: 0px 0px 5px 0px rgba(66, 68, 90, 1);
+    border-radius: 10px;
+}
+
+.grid_info2 img {
+    width: 100%;
+    height: 55%;
+    border-radius: 10px 10px 0 0;
+}
+
+.grid_info3 {
+    grid-area: info3;
+    box-shadow: 0px 0px 5px 0px rgba(66, 68, 90, 1);
+    border-radius: 10px;
+}
+
+.grid_info3 img {
+    width: 100%;
+    height: 55%;
+    border-radius: 10px 10px 0 0;
+}
+
+/* footer */
+
+footer {
+    background-color: #111111;
+    display: flex;
+justify-content: space-around;
+    height: 15rem;
+}
+
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_links a, .footer_link2 a{
+    margin: 10px 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer_nombre{
+    text-align: center;
+    align-content: center;
+}
+
+
+
+.footer_nombre h2{
+    border-bottom: 4.2px solid #CCCCCC;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.footer_nombre img {
+    height: 55px;
+    width: 55px;
+}
+
+.footer_link2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.footer_copy{
+background-color: #1B4D3E;
+text-align: center;
+}
+
+.footer_copy p {
+    font-size: 10px;
+    padding: 0.3rem;
+}
+
+/* Responsive */
