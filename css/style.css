@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root {
+
+/* Primary */
+--Pink: hsl(322, 100%, 66%);
+--Light_Pink: hsl(321, 100%, 78%);
+--Light_Red: hsl(0, 100%, 63%);
+
+/* Neutral */
+
+--Very_Dark_Cyan: hsl(192, 100%, 9%);
+--Very_Pale_Blue: hsl(207, 100%, 98%);
+--bg-main: #f6fbff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Configuraciones */
+
+.margin_b{
+    margin-bottom: 2rem;
+}
+
+.font_numeros{
+    font-size: 3rem;
+}
+
+.contenedor {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.img_logo {
+    width: 8rem;
+    height: 1.5rem;
+}
+
+.img_bg{
+    width: 25rem;
+    height: 20rem;
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.bto {
+    color: var(--Pink);
+    border: 1px solid var(--Pink);
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 1.5rem; 
+}
+
+.bto_get {
+    color: var(--Very_Pale_Blue);
+    background-color: var(--Pink);
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.8rem 3rem; 
+    
+}
+
+.layaout_BG--t {
+    background-image: url(../images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    height: 10rem;
+}
+
+
+.layaout_BG--t1 {
+    background-image: url(../images/bg-section-top-desktop-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    height: 10rem;
+}
+
+.layaout_BG--b {
+    background-image: url(../images/bg-section-bottom-desktop-2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 10rem;
+}
+
+.layaout_BGF--t {
+    background-image: url(../images/bg-footer-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    height: 10rem;
+}
+
+
+/* Header */
+
+.header {
+    font-family: "Poppins", sans-serif;
+}
+
+.nav {
+    margin-bottom: 5rem;
+}
+
+.nav_logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header_imagen img {
+    display: flex;
+}
+
+.header_texto {
+    text-align: center;
+}
+
+.header_texto-parrafo {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+
+.header_numeros {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 1rem;  
+    margin-top: 6rem;  
+}
+
+.header_numeros--text p{
+    color: var(--Very_Dark_Cyan);
+}
+
+
+
+
+
+/* main */
+
+
+.main {
+    font-family: "Open Sans", sans-serif;
+}
+
+.contenido {
+    background-color: var(--bg-main);
+    position: relative;
+    display: flex;
+}
+
+.contentido--reverse {
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+}
+.contenido_texto {
+    width: 32%;
+    margin: 0 auto;
+}
+
+.contenido_img {
+    width: 30%;
+    margin: 0 auto;
+}
+
+
+.main_pregunta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_pregunta a {
+    background-color: var(--Pink);
+    color: var(--Very_Pale_Blue);
+    border: 1px solid var(--Pink);
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 1.5rem; 
+    width: 25%;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--Very_Dark_Cyan);
+    display: flex;
+    justify-content: space-between;
+    color: var(--bg-main);
+    font-family: "Open Sans", sans-serif;   
+}
+
+.contenedor_footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_contacto{
+    width: 30%;
+}
+
+
+.footer_request {
+    width: 30%;
+}
+
+.telefono, .email {
+    display: flex;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    /* Configuracions */
+
+.margin_b{
+    margin-bottom: 2rem;
+}
+
+.font_numeros{
+    font-size: 1.5rem;
+}
+
+.contenedor {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.img_logo {
+    width: 1rem;
+    height: 1.5rem;
+}
+
+.img_bg{
+    width: 25rem;
+    height: 20rem;
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.bto {
+    color: var(--Pink);
+    border: 1px solid var(--Pink);
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 1.5rem; 
+}
+
+.bto_get {
+    color: var(--Very_Pale_Blue);
+    background-color: var(--Pink);
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.8rem 3rem; 
+    
+}
+
+.header_texto-parrafo {
+    width: 100%;
+}
+
+.header_numeros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main1{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.contenido_img {
+    justify-items: center;
+}
+
+.contenido_img img {
+    height: 10rem;
+    width: 13rem;
+
+}
+
+
+.contenido_texto{
+    width: 85%;
+}
+
+
+.main_pregunta {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main_pregunta a {
+    width: 60%;
+}
+
+.contenedor_footer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 0 auto;
+    gap: 2rem 0;
+}
+
+
+.footer_contacto {
+    width: 100%;
+}
+
+.footer_request {
+    width: 100%;
+}
+
+.layaout_BG--t {
+    background-image: url(../images/bg-section-top-mobile-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    height: 10rem;
+}
+
+
+.layaout_BG--t1 {
+    background-image: url(../images/bg-section-top-mobile-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    height: 10rem;
+}
+
+.layaout_BG--b {
+    background-image: url(../images/bg-section-bottom-mobile-1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 10rem;
+}
+
+.layaout_BGF--t {
+    background-image: url(../images/bg-footer-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    height: 10rem;
+}
+
+
+}
